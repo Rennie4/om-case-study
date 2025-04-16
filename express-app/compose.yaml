@@ -1,1 +1,17 @@
-# Add code here
+# services:
+#   express-app:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     ports:
+#       - "4567:4567"
+#     restart: always
+
+version: '3.9'
+ 
+services:
+  express-app:
+    build: .
+    ports:
+      - "4567:4567"
+    restart: always

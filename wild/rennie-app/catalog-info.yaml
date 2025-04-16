@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: example-template
+  title: Example Template
+  description: A test template for your custom action
+spec:
+  type: template
+  lifecycle: experimental
+  owner: you@example.com
+  path: ../example/template/template.yaml

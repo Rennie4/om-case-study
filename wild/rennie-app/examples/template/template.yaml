@@ -1,0 +1,14 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: test-template
+  title: Test Custom Action
+  description: A template to test the custom action
+spec:
+  steps:
+    - id: create-file
+      name: Create File
+      action: my:custom:action
+      input:
+        filename: "example.txt"
+        contents: "Hello from my custom action!"
